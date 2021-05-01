@@ -1,0 +1,252 @@
+---------------------------------------------------------------------------------
+Supply chain contract address:
+
+https://rinkeby.etherscan.io/address/0x8b99Cb66e1366375109280d829f4bF83e7F85DFE
+
+See below for all contracts and their hashes.
+
+---------------------------------------------------------------------------------
+
+
+truffle(develop)> migrate --network rinkeby
+
+Compiling your contracts...
+===========================
+> Everything is up to date, there is nothing to compile.
+
+
+
+Migrations dry-run (simulation)
+===============================
+> Network name:    'rinkeby-fork'
+> Network id:      4
+> Block gas limit: 10000000 (0x989680)
+
+
+1_initial_migration.js
+======================
+
+   Deploying 'Migrations'
+   ----------------------
+   > block number:        8509197
+   > block timestamp:     1619872563
+   > account:             0x022152a80B28D7345f3E6a4Ab1c575e865456E8d
+   > balance:             2.95156801
+   > gas used:            223594 (0x3696a)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00223594 ETH
+
+   -------------------------------------
+   > Total cost:          0.00223594 ETH
+
+
+2_deploy_contracts.js
+=====================
+
+   Deploying 'FarmerRole'
+   ----------------------
+   > block number:        8509199
+   > block timestamp:     1619872572
+   > account:             0x022152a80B28D7345f3E6a4Ab1c575e865456E8d
+   > balance:             2.94830632
+   > gas used:            298821 (0x48f45)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00298821 ETH
+
+
+   Deploying 'DistributorRole'
+   ---------------------------
+   > block number:        8509200
+   > block timestamp:     1619872578
+   > account:             0x022152a80B28D7345f3E6a4Ab1c575e865456E8d
+   > balance:             2.94531811
+   > gas used:            298821 (0x48f45)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00298821 ETH
+
+
+   Deploying 'RetailerRole'
+   ------------------------
+   > block number:        8509201
+   > block timestamp:     1619872587
+   > account:             0x022152a80B28D7345f3E6a4Ab1c575e865456E8d
+   > balance:             2.94232966
+   > gas used:            298845 (0x48f5d)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00298845 ETH
+
+
+   Deploying 'ConsumerRole'
+   ------------------------
+   > block number:        8509202
+   > block timestamp:     1619872593
+   > account:             0x022152a80B28D7345f3E6a4Ab1c575e865456E8d
+   > balance:             2.93934145
+   > gas used:            298821 (0x48f45)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00298821 ETH
+
+
+   Deploying 'SupplyChain'
+   -----------------------
+   > block number:        8509203
+   > block timestamp:     1619872615
+   > account:             0x022152a80B28D7345f3E6a4Ab1c575e865456E8d
+   > balance:             2.91103937
+   > gas used:            2830208 (0x2b2f80)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.02830208 ETH
+
+   -------------------------------------
+   > Total cost:          0.04025516 ETH
+
+
+Summary
+=======
+> Total deployments:   6
+> Final cost:          0.0424911 ETH
+
+
+
+
+
+Starting migrations...
+======================
+> Network name:    'rinkeby'
+> Network id:      4
+> Block gas limit: 10000000 (0x989680)
+
+
+1_initial_migration.js
+======================
+
+   Deploying 'Migrations'
+   ----------------------
+   > transaction hash:    0xa9754f5d4f5c0b7b9c544b4377c53aca75d5f0231d5ce550ad3e76b2e5939e94
+   > Blocks: 1            Seconds: 16
+   > contract address:    0x91E5d5bbE5b886a43c84969a1e7f2924d56B8e55
+   > block number:        8509201
+   > block timestamp:     1619872645
+   > account:             0x022152a80B28D7345f3E6a4Ab1c575e865456E8d
+   > balance:             2.95140501
+   > gas used:            239894 (0x3a916)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00239894 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.00239894 ETH
+
+
+2_deploy_contracts.js
+=====================
+
+   Deploying 'FarmerRole'
+   ----------------------
+   > transaction hash:    0x88ecf61a23ce4c241ddb4e0df47806ed192785fb27fc064ada12630ec54a15ec
+   > Blocks: 1            Seconds: 12
+   > contract address:    0x5b6AAc720748B26605CAc81345e84CC6e0404B45
+   > block number:        8509203
+   > block timestamp:     1619872675
+   > account:             0x022152a80B28D7345f3E6a4Ab1c575e865456E8d
+   > balance:             2.94780332
+   > gas used:            314421 (0x4cc35)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00314421 ETH
+
+
+   Deploying 'DistributorRole'
+   ---------------------------
+   > transaction hash:    0x7932238c3ca73502339b525ee18b136c54c7fc18e06a956cb9e59d3ce02239a9
+   > Blocks: 0            Seconds: 9
+   > contract address:    0x00A37FcDC05eF1f82e592Ca271d215b432F2cCAE
+   > block number:        8509204
+   > block timestamp:     1619872690
+   > account:             0x022152a80B28D7345f3E6a4Ab1c575e865456E8d
+   > balance:             2.94465911
+   > gas used:            314421 (0x4cc35)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00314421 ETH
+
+
+   Deploying 'RetailerRole'
+   ------------------------
+   > transaction hash:    0x800eb1c6ca0a97c9ae089b242c007f082d19e01b5e6445108efd4b56ec387505
+   > Blocks: 0            Seconds: 8
+   > contract address:    0x1F20930EfAdBCF0f2B566C4fc1a617916b125109
+   > block number:        8509205
+   > block timestamp:     1619872705
+   > account:             0x022152a80B28D7345f3E6a4Ab1c575e865456E8d
+   > balance:             2.94151466
+   > gas used:            314445 (0x4cc4d)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00314445 ETH
+
+
+   Deploying 'ConsumerRole'
+   ------------------------
+   > transaction hash:    0xd34514a94289566005ac921cc6a7b662817bb50a2bd4b5b842b73df48574f83f
+   > Blocks: 0            Seconds: 8
+   > contract address:    0xCAA2Fb97DEcF4bdf6828B48911d913c15DD21732
+   > block number:        8509206
+   > block timestamp:     1619872720
+   > account:             0x022152a80B28D7345f3E6a4Ab1c575e865456E8d
+   > balance:             2.93837045
+   > gas used:            314421 (0x4cc35)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00314421 ETH
+
+
+   Deploying 'SupplyChain'
+   -----------------------
+   > transaction hash:    0x191eb88475d7815b5ccaf565a45c8f5075cb6acf5f6b6d9df74f28c8e4fd9667
+   > Blocks: 0            Seconds: 8
+   > contract address:    0x8b99Cb66e1366375109280d829f4bF83e7F85DFE
+   > block number:        8509207
+   > block timestamp:     1619872735
+   > account:             0x022152a80B28D7345f3E6a4Ab1c575e865456E8d
+   > balance:             2.90878337
+   > gas used:            2958708 (0x2d2574)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.02958708 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.04216416 ETH
+
+
+Summary
+=======
+> Total deployments:   6
+> Final cost:          0.0445631 ETH
+
+
+
+(node:22430) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 data listeners added to [Provider]. Use emitter.setMaxListeners() to increase limit
+(node:22430) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 connect listeners added to [Provider]. Use emitter.setMaxListeners() to increase limit
+(node:22430) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 error listeners added to [Provider]. Use emitter.setMaxListeners() to increase limit
+(node:22430) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 close listeners added to [Provider]. Use emitter.setMaxListeners() to increase limit
+- Blocks: 0            Seconds: 0
+- Saving migration to chain.
+- Blocks: 0            Seconds: 0
+- Blocks: 0            Seconds: 0
+- Blocks: 0            Seconds: 0
+- Blocks: 0            Seconds: 0
+- Blocks: 0            Seconds: 0
+- Saving migration to chain.

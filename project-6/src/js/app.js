@@ -1,3 +1,6 @@
+//import Web3 from "web3";
+//const Web3 = require('web3')
+
 App = {
     web3Provider: null,
     contracts: {},
@@ -60,9 +63,11 @@ App = {
         /// Modern dapp browsers...
         if (window.ethereum) {
             App.web3Provider = window.ethereum;
+            console.log(App.web3Provider);
             try {
                 // Request account access
                 await window.ethereum.enable();
+                
             } catch (error) {
                 // User denied account access...
                 console.error("User denied account access")
@@ -93,8 +98,11 @@ App = {
             }
             console.log('getMetaskID:',res);
             App.metamaskAccountID = res[0];
+            
 
         })
+        web3.eth.defaultAccount = web3.eth.accounts[0];
+
     },
 
     initSupplyChain: function () {
@@ -166,7 +174,7 @@ App = {
     harvestItem: function(event) {
         event.preventDefault();
         var processId = parseInt($(event.target).data('id'));
-
+        
         App.contracts.SupplyChain.deployed().then(function(instance) {
             return instance.harvestItem(
                 App.upc, 
